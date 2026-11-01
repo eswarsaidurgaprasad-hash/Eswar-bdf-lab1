@@ -4,6 +4,17 @@
 **Registration number:** 252U1R3104  
 **Section:** CSE-DS-2B
 
+## Live Deployment (Render)
+
+**Base URL:** [https://eswar-bdf-lab1-1.onrender.com](https://eswar-bdf-lab1-1.onrender.com)
+
+| Route | Live URL | Status | Output / Description |
+|---|---|---:|---|
+| **Home Route** | [https://eswar-bdf-lab1-1.onrender.com/](https://eswar-bdf-lab1-1.onrender.com/) | 200 OK | `Node.js and Express are ready to handle your requests!` |
+| **About Route** | [https://eswar-bdf-lab1-1.onrender.com/about](https://eswar-bdf-lab1-1.onrender.com/about) | 200 OK | JSON with student name, registration number, and section |
+| **Current Date & Time** | [https://eswar-bdf-lab1-1.onrender.com/time](https://eswar-bdf-lab1-1.onrender.com/time) | 200 OK | Current date and time |
+| **404 Not Found** | [https://eswar-bdf-lab1-1.onrender.com/not-found](https://eswar-bdf-lab1-1.onrender.com/not-found) | 404 Not Found | `404 - Page Not Found` |
+
 ## Architecture
 
 The project separates the server startup, Express app configuration, and route definitions:
@@ -67,25 +78,29 @@ Example `/about` response:
 ## Route Screenshots
 
 ### 1. Home Route (`GET /`)
-- **URL:** `http://localhost:3000/`
+- **Localhost URL:** `http://localhost:3000/`
+- **Live URL:** [https://eswar-bdf-lab1-1.onrender.com/](https://eswar-bdf-lab1-1.onrender.com/)
 - **Output:** `Node.js and Express are ready to handle your requests!`
 
 ![Home Route](screenshots/01-home-route.png)
 
 ### 2. About Route (`GET /about`)
-- **URL:** `http://localhost:3000/about`
+- **Localhost URL:** `http://localhost:3000/about`
+- **Live URL:** [https://eswar-bdf-lab1-1.onrender.com/about](https://eswar-bdf-lab1-1.onrender.com/about)
 - **Output:** JSON containing student details
 
 ![About Route](screenshots/02-about-route.png)
 
 ### 3. Current Date and Time Route (`GET /time`)
-- **URL:** `http://localhost:3000/time`
+- **Localhost URL:** `http://localhost:3000/time`
+- **Live URL:** [https://eswar-bdf-lab1-1.onrender.com/time](https://eswar-bdf-lab1-1.onrender.com/time)
 - **Output:** `Current date and time: Sun Nov 01 2026 ...`
 
 ![Date and Time Route](screenshots/03-time-route.png)
 
 ### 4. 404 Page Not Found Route (`GET /not-found`)
-- **URL:** `http://localhost:3000/not-found`
+- **Localhost URL:** `http://localhost:3000/not-found`
+- **Live URL:** [https://eswar-bdf-lab1-1.onrender.com/not-found](https://eswar-bdf-lab1-1.onrender.com/not-found)
 - **Status:** `404 Not Found`
 - **Output:** `404 - Page Not Found`
 
@@ -117,4 +132,5 @@ Example `/about` response:
 - [x] Run `npm start`
 - [x] Visit `/`, `/about`, and `/time`
 - [x] Visit `/not-found` and confirm status `404`
+- [x] Deploy to Render and verify live endpoints
 - [ ] Stop Express, run `npm run plain`, and test `/` and `/unknown`
