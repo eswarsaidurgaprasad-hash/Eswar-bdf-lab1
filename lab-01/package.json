@@ -1,0 +1,20 @@
+{
+  "name": "eswar-node-express-lab",
+  "version": "1.0.0",
+  "description": "Lab 1 - Node.js HTTP and Express server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "plain": "node http-server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "backend-lab"
+  ],
+  "author": "Y. Eswar Sai Durga Prasad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
